@@ -1,5 +1,4 @@
 const model = require('../models/cliente');
-const conteudo_arquivo = require('../models/conteudo_arquivo');
 
 function Dao() {}
 
