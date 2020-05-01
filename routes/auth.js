@@ -1,4 +1,4 @@
-var jwt = require('jsonwebtoken');
+require('dotenv/config');
 module.exports = function (app, router) {
     app.use(function (req, res, next) {
         res.setHeader('Access-Control-Allow-Origin', '*');
@@ -8,6 +8,7 @@ module.exports = function (app, router) {
         var token = req.headers['x-api-key'];
         if (token) {
 
+      
             if (token == process.env.TOKEN_API) {
                 next();
             } else {
