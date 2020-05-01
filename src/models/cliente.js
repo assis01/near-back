@@ -14,12 +14,12 @@ const CLIENTE = sequelize.define(
         type: Sequelize.STRING
     },
    
-    updated_at: {
-        field: 'updated_at',
+    createdAt: {
+        field: 'createdAt',
         type: Sequelize.DATE
     },
-    created_at: {
-        field: 'created_at',
+    updatedAt: {
+        field: 'updatedAt',
         type: Sequelize.DATE
     }
 },
