@@ -5,5 +5,4 @@ node_modules/
 package-lock.json
 
 
-./config/configSequelize.js
-config/configSequelize.js
+/config/configSequelize.js

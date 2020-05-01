@@ -1,13 +1,9 @@
+
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
-const db = new Sequelize({
-    username:  process.env.DATABASE_USER,
-    database:  process.env.DATABASE_NAME,
-    port: '5432',
+const db = new Sequelize(process.env.DATABASE_URL, {
 
-    password:  process.env.DATABASE_PASSWORD,
-    host: process.env.DATABASE_URL,
     dialect: 'postgres',
     operatorsAliases: Op,
     define: {
@@ -19,5 +15,5 @@ const db = new Sequelize({
         },
         timestamps: true
     }
-});
+  });
 module.exports = db;
